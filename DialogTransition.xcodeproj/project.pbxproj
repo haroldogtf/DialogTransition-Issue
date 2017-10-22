@@ -12,6 +12,8 @@
 		093EB7541F9CD27E00DD3E48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 093EB7521F9CD27E00DD3E48 /* Main.storyboard */; };
 		093EB7561F9CD27E00DD3E48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 093EB7551F9CD27E00DD3E48 /* Assets.xcassets */; };
 		093EB7591F9CD27E00DD3E48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 093EB7571F9CD27E00DD3E48 /* LaunchScreen.storyboard */; };
+		093EB7611F9CDB1B00DD3E48 /* DialogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093EB7601F9CDB1B00DD3E48 /* DialogViewController.swift */; };
+		093EB7631F9CDC5B00DD3E48 /* AnotherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093EB7621F9CDC5B00DD3E48 /* AnotherViewController.swift */; };
 		C80C04C0CEA8CCDA34D09961 /* Pods_DialogTransition.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C02126C851A39741DFC3F6CC /* Pods_DialogTransition.framework */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +25,8 @@
 		093EB7551F9CD27E00DD3E48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		093EB7581F9CD27E00DD3E48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		093EB75A1F9CD27E00DD3E48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		093EB7601F9CDB1B00DD3E48 /* DialogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogViewController.swift; sourceTree = "<group>"; };
+		093EB7621F9CDC5B00DD3E48 /* AnotherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnotherViewController.swift; sourceTree = "<group>"; };
 		814DBF63DEE1932E0740E2E3 /* Pods-DialogTransition.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DialogTransition.release.xcconfig"; path = "Pods/Target Support Files/Pods-DialogTransition/Pods-DialogTransition.release.xcconfig"; sourceTree = "<group>"; };
 		88A32FBB6B30A93B2BC4BACB /* Pods-DialogTransition.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DialogTransition.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DialogTransition/Pods-DialogTransition.debug.xcconfig"; sourceTree = "<group>"; };
 		C02126C851A39741DFC3F6CC /* Pods_DialogTransition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DialogTransition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,6 +67,8 @@
 			children = (
 				093EB74E1F9CD27E00DD3E48 /* AppDelegate.swift */,
 				093EB7501F9CD27E00DD3E48 /* ViewController.swift */,
+				093EB7601F9CDB1B00DD3E48 /* DialogViewController.swift */,
+				093EB7621F9CDC5B00DD3E48 /* AnotherViewController.swift */,
 				093EB7521F9CD27E00DD3E48 /* Main.storyboard */,
 				093EB7551F9CD27E00DD3E48 /* Assets.xcassets */,
 				093EB7571F9CD27E00DD3E48 /* LaunchScreen.storyboard */,
@@ -166,6 +172,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-DialogTransition/Pods-DialogTransition-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MDFInternationalization/MDFInternationalization.framework",
 				"${BUILT_PRODUCTS_DIR}/MDFTextAccessibility/MDFTextAccessibility.framework",
 				"${BUILT_PRODUCTS_DIR}/MaterialComponents/MaterialComponents.framework",
 				"${BUILT_PRODUCTS_DIR}/MotionAnimator/MotionAnimator.framework",
@@ -174,6 +181,7 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDFInternationalization.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDFTextAccessibility.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MaterialComponents.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MotionAnimator.framework",
@@ -227,6 +235,8 @@
 			files = (
 				093EB7511F9CD27E00DD3E48 /* ViewController.swift in Sources */,
 				093EB74F1F9CD27E00DD3E48 /* AppDelegate.swift in Sources */,
+				093EB7631F9CDC5B00DD3E48 /* AnotherViewController.swift in Sources */,
+				093EB7611F9CDB1B00DD3E48 /* DialogViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,6 +376,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DialogTransition/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.haroldo.DialogTransition;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -381,6 +392,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DialogTransition/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.haroldo.DialogTransition;
 				PRODUCT_NAME = "$(TARGET_NAME)";

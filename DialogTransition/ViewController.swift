@@ -7,19 +7,23 @@
 //
 
 import UIKit
+import MaterialComponents.MaterialDialogs
 
 class ViewController: UIViewController {
 
+    let dialogTransitionController = MDCDialogTransitionController()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func openDialog(_ sender: Any) {
+        let authDialogController: UIViewController? = self.storyboard?.instantiateViewController(withIdentifier: "Dialog")
+        authDialogController?.modalPresentationStyle = .custom
+        authDialogController?.transitioningDelegate = dialogTransitionController
+        
+        present(authDialogController!, animated: true)
     }
-
-
+    
 }
 
